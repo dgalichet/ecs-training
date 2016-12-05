@@ -9,7 +9,9 @@ Cette opération compile l'application et la package dans le répertoire `target
 
 ## Création d'un repository Docker
 Dans la console ECS, choisir le lien ECR et ajoutez un repository
-```eval `aws ecs get-login````
+
+Sur votre instance, récupérez les credentials pour le docker registry ECR via la commande:
+```eval `aws ecr get-login --region eu-west-1````
 
 ## Création d'un container
 Dans le répertoire `training-demo` nous allongs créer le container hello-scala
